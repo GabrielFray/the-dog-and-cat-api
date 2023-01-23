@@ -1,0 +1,67 @@
+body {
+  background-image: url("https://wallpaperbat.com/img/510377-pink-skies-1920x1080-wallpaper.jpg");
+  background-position: center;
+}
+.max--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.imgPet {
+  height: 380px;
+  width: 290px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  object-fit: cover;
+}
+.content button {
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 10px;
+}
+.content button {
+  padding: 5px 40px;
+  border: unset;
+  border-radius: 8px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+  cursor: pointer;
+}
+
+button:hover::before {
+  width: 100%;
+}
